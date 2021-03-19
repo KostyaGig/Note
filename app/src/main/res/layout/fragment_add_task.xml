@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+        <EditText
+            android:id="@+id/field_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:text="HIJEIFJOIEJFWIJFIWEOJIFEJFIO"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Your text"
+            />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/important_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Important"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/date_created_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Date created:"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_task_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
